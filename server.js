@@ -15,6 +15,6 @@ app.configure(function () {
 var api = require('./controller/api.js');
 
 app.get('/features/:type?', api.list);
-app.get('/features/:lon/:lat/:dist?', api.near);
+app.get('/features/:lat/:lon/:dist?', api.near);
 
 app.listen(8000)
