@@ -14,6 +14,9 @@ app.configure(function () {
 
 var api = require('./controller/api.js');
 
+app.get('/', function(req, res) {
+  res.send({ hello : "world"})
+});
 app.get('/features/:type?', api.list);
 app.get('/features/:lat/:lon/:dist?', api.near);
 
