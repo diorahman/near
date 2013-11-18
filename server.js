@@ -14,10 +14,7 @@ app.configure(function () {
 
 var api = require('./controller/api.js');
 
-app.get('/', function(req, res) {
-  res.send({ hello : "world"})
-});
-app.get('/features/:type?', api.list);
-app.get('/features/:lat/:lon/:dist?', api.near);
+app.get('/features/:id', api.show)
+app.get('/features/:category/near', api.near)
 
-app.listen(8000)
+app.listen(3000)

@@ -9,7 +9,7 @@ var serviceType = "WFS";
 var version = "1.0.0";
 var requestType = "GetFeature";
 
-var typeNames = ["hotel", "museum", "objek_alam", "kultural", "kontemporer", "purbakala", "restaurant", "pantai", "bandara_sipil"];
+var typeNames = ["hotel", "museum", "objek_alam", "kultural", "kontemporer", "purbakala", "restaurant", "pantai", "bandara_sipil", "terminal", "pelabuhan"];
 var outputFormat = "json";
 
 var maxNumber = 10000 // set to possible number of features for each type
